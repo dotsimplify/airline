@@ -5,8 +5,8 @@ import { formatDate, readingTime } from "../../app/helper/helper";
 
 const BlogThumbnail = ({ data }) => {
   return (
-    <div className="flex justify-center max-w-sm mb-6 border border-black rounded-md ">
-      <div className="max-w-sm bg-white rounded-md shadow-lg">
+    <div className="flex justify-center w-full mb-6 border border-black rounded-md md:max-w-sm ">
+      <div className="bg-white rounded-md shadow-lg md:max-w-sm">
         {data.featured_media > 0 && (
           <Link href={`/travel-comprehensive-guide/${data.slug}`}>
             <a>

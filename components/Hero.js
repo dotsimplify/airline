@@ -20,11 +20,11 @@ const Hero = (props) => {
 
           <div className="relative z-10 md:text-center lg:text-left">
             <div className="relative">
-              <p className="inline text-5xl leading-tight tracking-tight text-transparent text-white font-display">
+              <p className="inline text-3xl leading-tight tracking-tight text-black md:text-white md:text-5xl font-display">
                 We help to find best and cheap flight deal so that you
                 experience the joy of #Travel with Us
               </p>
-              <p className="mt-3 text-base tracking-tight text-slate-200">
+              <p className="mt-3 text-base tracking-tight text-black md:text-slate-200">
                 Explore flights & deal like a pro with our expert
                 recommendations.
               </p>

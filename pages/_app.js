@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
         <Header isOpen={isOpen} setIsOpen={setIsOpen} />
         <Hero isOpen={isOpen} setIsOpen={setIsOpen} />
         <FlightSearch isOpen={isOpen} setIsOpen={setIsOpen} />
-        <div className="w-full py-16 mx-auto max-w-7xl bg-gray-50"></div>
+        <div className="w-full py-56 mx-auto md:py-16 max-w-7xl bg-gray-50"></div>
 
         <Component isOpen={isOpen} setIsOpen={setIsOpen} {...pageProps} />
         <Footer />

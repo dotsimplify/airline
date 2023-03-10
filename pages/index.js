@@ -74,7 +74,10 @@ const Index = (props) => {
         </script>
       </Head>
 
-      <div className="mx-auto bg-white max-w-7xl">
+      <div
+        onClick={() => props.isOpen && props.setIsOpen(false)}
+        className="mx-auto bg-white max-w-7xl"
+      >
         <Points />
         <div className="flex items-center justify-between pt-6 bg-white lg:px-12">
           <h2 className="mt-4 text-2xl font-bold text-gray-900 md:text-4xl">
@@ -118,6 +121,7 @@ const Index = (props) => {
                 props.airports.map((one) => {
                   return (
                     <AirportCard
+                      key={one.slug}
                       image={one.acf.airport_image}
                       airportName={one.title.rendered}
                       slug={`/flight-to/${one.slug}`}

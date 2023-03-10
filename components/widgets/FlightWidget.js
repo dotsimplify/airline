@@ -44,9 +44,9 @@ const FlightSearch = (props) => {
   return (
     <div
       onClick={() => props.isOpen && props.setIsOpen(false)}
-      className="absolute z-40 flex items-center px-4 py-12 mx-auto bg-white border rounded-lg shadow-lg max-w-7xl 2xl:bottom-32 -bottom-7 left-6 right-6 justify-evenly"
+      className="absolute z-40 flex flex-col items-center px-4 py-4 mx-auto mt-8 bg-white border rounded-lg shadow-lg md:py-12 md:flex-row max-w-7xl left-6 right-6 2xl:bottom-32 md:-bottom-7 md:left-6 md:right-6 justify-evenly"
     >
-      <div className="px-1">
+      <div className="w-full px-1 md:w-auto">
         <label
           className="block mb-2 text-sm font-semibold text-gray-700"
           htmlFor="origin"
@@ -62,7 +62,7 @@ const FlightSearch = (props) => {
           placeholder="Select origin airport"
         />
       </div>
-      <div className="px-1">
+      <div className="w-full px-1 md:w-auto">
         <label
           className="block mb-2 text-sm font-semibold text-gray-700"
           htmlFor="destination"
@@ -78,7 +78,7 @@ const FlightSearch = (props) => {
           placeholder="Select destination airport"
         />
       </div>
-      <div className="px-1">
+      <div className="w-full px-1 md:w-auto">
         <label
           className="block mb-2 text-sm font-semibold text-gray-700"
           htmlFor="departDate"
@@ -94,7 +94,7 @@ const FlightSearch = (props) => {
           className="w-full px-3 py-2 text-sm border border-gray-400 rounded-md "
         />
       </div>
-      <div className="px-1">
+      <div className="w-full px-1 md:w-auto">
         <label
           className="block mb-2 text-sm font-semibold text-gray-700"
           htmlFor="returnDate"
@@ -110,7 +110,7 @@ const FlightSearch = (props) => {
           className="w-full px-3 py-2 text-sm border border-gray-400 rounded-md"
         />
       </div>
-      <div className="px-1">
+      <div className="w-full px-1 md:w-auto">
         <label
           className="mb-2 font-bold text-gray-700 "
           htmlFor="passengerCount"
@@ -128,7 +128,7 @@ const FlightSearch = (props) => {
       </div>
       <button
         onClick={handleSearch}
-        className="flex items-center justify-center px-4 py-2 text-sm text-white rounded-lg bg-sky-500 lg:mt-5 hover:bg-sky-600 focus:bg-sky-600 focus:outline-none"
+        className="flex items-center justify-center w-full px-4 py-2 mt-4 text-sm text-white rounded-lg md:w-auto md:mt-0 bg-sky-500 lg:mt-5 hover:bg-sky-600 focus:bg-sky-600 focus:outline-none"
       >
         <FaSearch className="mr-2" />
         Search Flights

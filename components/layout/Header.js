@@ -81,28 +81,48 @@ const Navbar = (props) => {
         </div>
       </div>
       <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: props.isOpen ? 1 : 0, y: props.isOpen ? 0 : -20 }}
+        initial={{ opacity: 0, y: -250 }}
+        animate={{ opacity: props.isOpen ? 1 : 0, y: props.isOpen ? 0 : -2000 }}
         className="absolute z-30 w-full md:hidden top-16 bg-sky-900"
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link href="/">
-            <a className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:text-white">
+            <a
+              onClick={() => props.setIsOpen(false)}
+              className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:text-white"
+            >
               Home
             </a>
           </Link>
           <Link href="/airlines">
-            <a className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:text-white">
+            <a
+              onClick={() => props.setIsOpen(false)}
+              className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:text-white"
+            >
               Airlines
             </a>
           </Link>
           <Link href="/airports">
-            <a className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:text-white">
+            <a
+              onClick={() => props.setIsOpen(false)}
+              className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:text-white"
+            >
               Airports
             </a>
           </Link>
+          <Link href="/blogs">
+            <a
+              onClick={() => props.setIsOpen(false)}
+              className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:text-white"
+            >
+              Blogs
+            </a>
+          </Link>
           <Link href="/contact">
-            <a className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:text-white">
+            <a
+              onClick={() => props.setIsOpen(false)}
+              className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:text-white"
+            >
               Contact
             </a>
           </Link>
