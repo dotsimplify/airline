@@ -163,6 +163,6 @@ export async function getStaticProps() {
       airports: responses[1].data,
       articles: responses[2].data,
     },
-    revalidate: 30,
+    revalidate: 10,
   };
 }

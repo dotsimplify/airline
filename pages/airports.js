@@ -115,6 +115,6 @@ export async function getStaticProps() {
     props: {
       airports: responses[0].data,
     },
-    revalidate: 30,
+    revalidate: 10,
   };
 }

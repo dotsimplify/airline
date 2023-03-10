@@ -71,12 +71,12 @@ const Blogs = ({ articles }) => {
         />
         <meta name="twitter:creator" content="@airlinesexperts" />
       </Head>
-      <section className="bg-gray-50 pb-12 sm:pb-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-2xl font-semibold leading-8 text-gray-900">
+      <section className="pb-12 bg-gray-50 sm:pb-16">
+        <div className="px-6 mx-auto max-w-7xl lg:px-8">
+          <h2 className="text-2xl font-semibold leading-8 text-center text-gray-900">
             Articles
           </h2>
-          <div className="mx-auto mt-10 items-center gap-x-2 gap-y-10  flex flex-wrap">
+          <div className="flex flex-wrap items-center mx-auto mt-10 gap-x-2 gap-y-10">
             {currentResultsToMap &&
               currentResultsToMap.length > 0 &&
               currentResultsToMap.map((one) => {
@@ -108,6 +108,6 @@ export async function getStaticProps() {
     props: {
       articles: responses[0].data,
     },
-    revalidate: 30,
+    revalidate: 10,
   };
 }

@@ -96,7 +96,7 @@ export async function getStaticProps({ params }) {
     const data = await res.data;
     return {
       props: { airports: data },
-      revalidate: 30,
+      revalidate: 10,
     };
   } catch (error) {
     return {
