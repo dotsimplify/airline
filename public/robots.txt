@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://airlinesexperts.com/sitemap.xml
+Sitemap: https://airlinesexperts.com/server-sitemap1.xml
