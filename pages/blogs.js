@@ -72,11 +72,11 @@ const Blogs = ({ articles }) => {
         <meta name="twitter:creator" content="@airlinesexperts" />
       </Head>
       <section className="pb-12 bg-gray-50 sm:pb-16">
-        <div className="px-6 mx-auto max-w-7xl lg:px-8">
-          <h2 className="text-2xl font-semibold leading-8 text-center text-gray-900">
+        <div className="px-6 mx-auto max-w-[2000px] lg:px-8">
+          <h2 className="text-2xl pt-24 font-semibold leading-8 text-center text-gray-900">
             Articles
           </h2>
-          <div className="flex flex-wrap items-center mx-auto mt-10 gap-x-2 gap-y-10">
+          <div className="flex flex-wrap items-center mx-auto mt-10 gap-x-1 gap-y-6">
             {currentResultsToMap &&
               currentResultsToMap.length > 0 &&
               currentResultsToMap.map((one) => {

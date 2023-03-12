@@ -15,10 +15,16 @@ module.exports = {
         "extra-loose": "4rem",
       },
       backgroundColor: {
-        "theme-yellow": "#735B2D",
+        "theme-red": "#7E1B4E",
+        "theme-yellow": "#FFA903",
+        "theme-background": "#F2F3FA",
+        "theme-blue": "#329DBE",
       },
       colors: {
-        "theme-yellow": "#735B2D",
+        "theme-red": "#7E1B4E",
+        "theme-yellow": "#FFA903",
+        "theme-background": "#F2F3FA",
+        "theme-blue": "#329DBE",
       },
       animation: {
         floating: "floating 3s linear infinite ease-in-out",

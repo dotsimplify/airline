@@ -4,8 +4,8 @@ import { MdCoronavirus, MdFlight } from "react-icons/md";
 
 const Points = () => {
   return (
-    <div className="z-10 py-16 overflow-hidden bg-gray-50 ">
-      <div className="container px-6 m-auto space-y-8 text-gray-500 md:px-12">
+    <div className="z-10 py-16 overflow-hidden cursor-default bg-gray-100 ">
+      <div className=" px-6 m-auto space-y-8 mx-auto  max-w-[2000px] text-gray-500 md:px-12">
         <div>
           <span className="text-lg font-semibold text-gray-600">Features</span>
           <h2 className="mt-4 text-2xl font-bold text-gray-900 md:text-4xl">
@@ -17,7 +17,7 @@ const Points = () => {
             <div className="relative p-8 space-y-8">
               <TbDiscount2 className="text-5xl text-pink-600" />
               <div className="space-y-2">
-                <h5 className="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600">
+                <h5 className="text-xl font-medium text-gray-800 transition ">
                   Deals & Discount
                 </h5>
                 <p className="text-sm text-gray-600">
@@ -33,7 +33,7 @@ const Points = () => {
               <MdFlight className="text-5xl text-indigo-500" />
 
               <div className="space-y-2">
-                <h5 className="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600">
+                <h5 className="text-xl font-medium text-gray-800 transition ">
                   1000 + Airlines Search
                 </h5>
                 <p className="text-sm text-gray-600 ">
@@ -50,7 +50,7 @@ const Points = () => {
               <MdCoronavirus className="text-5xl text-green-700" />
 
               <div className="space-y-2">
-                <h5 className="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600">
+                <h5 className="text-xl font-medium text-gray-800 transition ">
                   Covid Guidelines
                 </h5>
                 <p className="text-sm text-gray-600">

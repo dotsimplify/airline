@@ -5,7 +5,7 @@ const TermsTemplate = (props) => {
   return (
     <>
       {props.data && (
-        <div className="relative -mt-[5.75rem] bg-white pb-24 overflow-hidden pt-[42px]">
+        <div className="relative  bg-white pb-24 overflow-hidden pt-[42px]">
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="relative mx-auto max-w-[37.5rem] pt-20 text-center pb-12">
               <h1 className="text-4xl font-extrabold tracking-wider capitalize text-slate-600 sm:text-5xl">

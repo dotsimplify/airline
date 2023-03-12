@@ -44,7 +44,7 @@ const FlightSearch = (props) => {
   return (
     <div
       onClick={() => props.isOpen && props.setIsOpen(false)}
-      className="absolute z-40 flex flex-col items-center px-4 py-4 mx-auto mt-8 bg-white border rounded-lg shadow-lg md:py-12 md:flex-row max-w-7xl left-6 right-6 2xl:bottom-32 md:-bottom-7 md:left-6 md:right-6 justify-evenly"
+      className="z-50   flex flex-col items-center px-4 py-4 mx-12 mt-8 bg-white border rounded-lg shadow-lg md:py-4 max-w-[1500px] 2xl:mx-auto md:flex-row justify-evenly"
     >
       <div className="w-full px-1 md:w-auto">
         <label

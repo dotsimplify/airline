@@ -72,7 +72,7 @@ const Airlines = ({ airlines }) => {
         <meta name="twitter:creator" content="@airlinesexperts" />
       </Head>
       <section className="py-12 bg-gray-50 sm:pb-16">
-        <div className="px-6 mx-auto max-w-7xl lg:px-8">
+        <div className="px-6 mx-auto max-w-[2000px] lg:px-8">
           <h2 className="text-lg font-semibold leading-8 text-center text-gray-900">
             Book your Flight with World's 600+ Airlines
           </h2>

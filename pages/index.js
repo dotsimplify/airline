@@ -1,11 +1,11 @@
 import React from "react";
 import axios from "axios";
+import Link from "next/link";
 import BlogThumbnail from "../components/blog/BlogThumbnail";
 import Head from "next/head";
 import { indexPageSchema, aToZ } from "../app/helper/helper";
 import Points from "../components/Points";
 import AirlineBadgeForPage from "../components/flights/AirlineBadgeForPage";
-import BoardingPass from "../components/boardingPass/BoardingPass";
 import AirportCard from "../components/airports/AirportCard";
 
 const Index = (props) => {
@@ -74,20 +74,19 @@ const Index = (props) => {
         </script>
       </Head>
 
-      <div
-        onClick={() => props.isOpen && props.setIsOpen(false)}
-        className="mx-auto bg-white max-w-7xl"
-      >
+      <div onClick={() => props.isOpen && props.setIsOpen(false)}>
         <Points />
-        <div className="flex items-center justify-between pt-6 bg-white lg:px-12">
+        <div className="flex items-center justify-between mx-auto  max-w-[2000px] pt-6 lg:py:12 bg-white lg:px-12">
           <h2 className="mt-4 text-2xl font-bold text-gray-900 md:text-4xl">
             Choose from 1000+ Airlines
           </h2>
-          <button className="text-base text-sky-600 hover:underline">
-            View All
-          </button>
+          <Link href="/airlines">
+            <button className="text-base text-sky-600 hover:underline">
+              View All
+            </button>
+          </Link>
         </div>
-        <div className="flex flex-wrap px-12 py-8 bg-white">
+        <div className="flex flex-wrap px-12 py-8 mx-auto  max-w-[2000px]  bg-white">
           {props.airlines &&
             props.airlines &&
             props.airlines.slice(0, 10).map((one) => {
@@ -100,8 +99,7 @@ const Index = (props) => {
               );
             })}
         </div>
-        <BoardingPass />
-        <div className="py-16 bg-gradient-to-br from-cyan-50 to-sky-100">
+        <div className="py-16 bg-gray-100">
           <div className="container px-6 m-auto text-gray-600 md:px-12 xl:px-6">
             <div className="mb-12 space-y-2 text-center">
               <span className="block w-max mx-auto px-3 py-1.5 border border-green-200 rounded-full bg-green-100 text-green-600">
@@ -115,7 +113,7 @@ const Index = (props) => {
                 airport, location, including flight schedules.
               </p>
             </div>
-            <div className="grid gap-12 lg:grid-cols-2">
+            <div className="flex flex-wrap items-center">
               {props.airports &&
                 props.airports &&
                 props.airports.map((one) => {
@@ -131,13 +129,13 @@ const Index = (props) => {
             </div>
           </div>
         </div>
-        <div className="relative hidden px-6 py-4 bg-white lg:px-12 md:block">
+        <div className="relative hidden px-6 py-4 mx-auto  max-w-[2000px] bg-white lg:px-12 md:block">
           <h1 className="text-xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-3xl">
             Articles
           </h1>
         </div>
         {props.articles && props.articles.length > 0 && (
-          <div className="grid grid-cols-1 gap-4 px-12 py-2 bg-white md:grid-cols-2 lg:grid-cols-3 ">
+          <div className="grid grid-cols-1 gap-4 mx-auto  max-w-[2000px] px-12 py-2 bg-white md:grid-cols-2 lg:grid-cols-4 ">
             {props.articles.map((one) => {
               return <BlogThumbnail data={one} key={one.id} />;
             })}

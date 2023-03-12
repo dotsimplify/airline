@@ -20,49 +20,47 @@ const Navbar = (props) => {
 
   return (
     <nav
-      className={`sticky top-0 z-50 ${
-        scrollPosition > 430 ? "bg-sky-800" : ""
+      className={`fixed w-full border border-transparent z-50 ${
+        scrollPosition > 450 ? "bg-white border-b-gray-200" : ""
       }`}
     >
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto max-w-[2000px] sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link href="/">
-                <h1
-                  className={`text-xl font-bold ${
-                    scrollPosition > 430 ? "text-gray-100" : "text-sky-800"
-                  } cursor-pointer `}
-                >
-                  Airlines Experts
-                </h1>
+                <img
+                  src="/logo.svg"
+                  className="w-1/2 cursor-pointer"
+                  alt="logo"
+                />
               </Link>
             </div>
           </div>
           <div className="flex items-center">
             <div className="hidden md:block">
               <Link href="/">
-                <a className="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white">
+                <a className="px-3 py-2 text-lg font-medium text-black rounded-md hover:underline">
                   Home
                 </a>
               </Link>
               <Link href="/airlines">
-                <a className="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white">
+                <a className="px-3 py-2 text-lg font-medium text-black rounded-md hover:underline">
                   Airlines
                 </a>
               </Link>
               <Link href="/airports">
-                <a className="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white">
+                <a className="px-3 py-2 text-lg font-medium text-black rounded-md hover:underline">
                   Airports
                 </a>
               </Link>
               <Link href="/blogs">
-                <a className="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white">
+                <a className="px-3 py-2 text-lg font-medium text-black rounded-md hover:underline">
                   Blogs
                 </a>
               </Link>
               <Link href="/contact">
-                <a className="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white">
+                <a className="px-3 py-2 text-lg font-medium text-black rounded-md hover:underline">
                   Contact
                 </a>
               </Link>
